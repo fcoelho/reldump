@@ -1,0 +1,95 @@
+languages=(
+	fr_CA
+	ta_IN
+	cs_CZ
+	nl_NL
+	en_NZ
+	en_TH
+	en_CA
+	pl_PL
+	th
+	et_EE
+	es_AR
+	fa_IR
+	bs_BA
+	sv_SE
+	sk_SK
+	es_ES
+	id_ID
+	dk_DK
+	fr_BE
+	no_NO
+	sl_SI
+	en_IN
+	en
+	es_CO
+	ro_RO
+	fr_CH
+	he_IL
+	en_IE
+	en_AU
+	pt_PT
+	fr_QC
+	lv_LV
+	mt_MT
+	bn_BD
+	ar_JO
+	la
+	sq_AL
+	pt_BR
+	ar_PS
+	de_CH
+	en_US
+	en_PH
+	zh_TW
+	da_DK
+	es_CA
+	de
+	az_AZ
+	ar_BH
+	ar_SA
+	ja_JP
+	hr_HR
+	uk_UA
+	tw_GH
+	ar_EG
+	de_AT
+	el_CY
+	es
+	es_MX
+	tl_PH
+	th_TH
+	ne_NP
+	it_IT
+	zh_CN
+	fil_PH
+	ar_AE
+	fr_FR
+	lt_LT
+	en_GB
+	tr_TR
+	de_DE
+	ar_AA
+	ko_KR
+	it_CH
+	ka_GE
+	ru_RU
+	nl_BE
+	bg_BG
+	el_GR
+	vi_VN
+	ga_IE
+	or_IN
+	hu_HU
+	hy_AM
+	lb_LU
+	es_CL
+	hi_IN
+	fi_FI
+)
+
+id=1
+for lang in "${languages[@]}"; do
+	echo "($id, '$(faker -l "$lang" name)')"
+	id=$((id + 1))
+done

@@ -1,0 +1,16 @@
+{
+  "kind": "mysql",
+  "host": "127.0.0.1",
+  "port": 9992,
+  "username": "sample",
+  "password": "sample",
+  "database": "sample",
+  "min_depth": 0,
+  "max_depth": 2,
+  "items": [
+    {
+      "table": "people",
+      "condition": "id = 559"
+    }
+  ]
+}
